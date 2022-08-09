@@ -1,7 +1,8 @@
+const lint = require('./lint-config.json')
 module.exports = {
     root: true,
     parserOptions: {
-        project: '../../tsconfig.json',
+        project: lint.root,
         tsconfigRootDir: __dirname,
     },
     parser: '@typescript-eslint/parser',
